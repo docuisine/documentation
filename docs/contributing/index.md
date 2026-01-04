@@ -14,7 +14,7 @@ Please see the [getting help page](../getting-help.md) for help with troubleshoo
 
 The entire project consists of a Python [FastAPI](https://fastapi.tiangolo.com/) backend server and a JavaScript [ReactJS](https://react.dev/) frontend web client. If you have experience with these languages, we're always grateful for any contributions you might want to make!
 
-For general guidelines on how the project works, including how to set up your development copy, make changes, and guidelines on Pull Requests (PRs), please see the documentation on contributing code. Docuisine follows a "fork and PR" methodology; if you're not familiar with this, please see the relevant section.
+For general guidelines on how the project works, including how to set up your development copy, make changes, and guidelines on Pull Requests (PRs), please see the [documentation on contributing code](./development/index.md). Docuisine follows a "fork and PR" methodology; if you're not familiar with this, please see the relevant section.
 
 ## Branding & Design
 
