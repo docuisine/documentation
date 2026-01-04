@@ -27,7 +27,7 @@ We use Postgres `postgres:18.1` for the database and MinIO `minio/minio:RELEASE.
 
 Docuisine be deployed to cloud for free using Vercel, Cloudflare, and Supabase. This approach is recommended for users who want to scale up to a larger userbase or simply to take advantage of free-tier offerings to reduce costs to zero instead of self-hosting on their own machines, which incurs hardware and electricity expenses, only of course if you are willing to give up the custody of your data and privacy.
 
-Both the [frontend](https://github.com/docuisine/docuisine-react) and [backend](https://github.com/docuisine/docuisine) can be deployed by forking their repositories on GitHub. These repos can then be connected to [Vercel](https://vercel.com/) and be deployed automatically. [Cloudflare R2](https://www.cloudflare.com/developer-platform/products/r2/) as the S3 storage, and [Supabase](https://supabase.com/) for the Postgres database. See the [relevant documentation](../../user-guide/installation.md#cloud-services) to run Docuisine on the cloud.
+Both the [frontend](https://github.com/docuisine/docuisine-react) and [backend](https://github.com/docuisine/docuisine) can be deployed by forking their repositories on GitHub. These repos can then be connected to [Vercel](https://vercel.com/) and be deployed automatically. [Cloudflare R2](https://www.cloudflare.com/developer-platform/products/r2/) as the S3 storage, and [Supabase](https://supabase.com/) for the Postgres database. See the [relevant documentation](../../user-guide/installation.md#cloud-services) for more details on how to run Docuisine on the cloud.
 
 ## What should you work on?
 
