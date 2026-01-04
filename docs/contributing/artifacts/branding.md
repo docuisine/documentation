@@ -17,7 +17,7 @@ The colors listed here are the significant choices we have made to represent Doc
 | UI - Light | Accent               |           | 96.2% 0.059 95.617 | `amber-100` |
 | UI - Light | Accent-Foreground    |           | 27.9% 0.077 45.635 | `amber-950` |
 
-These colors are implemented as code in the [frontend repository's `index.css`](https://github.com/iragca/docuisine-react/blob/master/src/index.css).
+These colors are implemented as code in the [frontend repository's `index.css`](https://github.com/docuisine/docuisine-react/blob/master/src/index.css).
 
 ## Icons and Other Assets
 
