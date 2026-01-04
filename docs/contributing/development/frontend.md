@@ -22,7 +22,7 @@ git clone https://github.com/docuisine/docuisine-react
 
 ```bash
 cd docuisine-react
-code .                  # Example: Using Visual Studio code
+code .                  # Example: Using Visual Studio Code
 ```
 
 3. Install dependencies with npm
