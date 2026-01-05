@@ -8,7 +8,7 @@ The frontend is written in JavaScript (TypeScript) using ReactJS. We use [shadcn
 
 !!! Requirements
 
-    Installing [git](https://git-scm.com/install/) and [npm]() are essential requirements to work with this project.
+    Installing [git](https://git-scm.com/install/) and [npm](https://github.com/npm/cli?tab=readme-ov-file#installation) are essential requirements to work with this project.
 
 The project is in this [repository](https://github.com/docuisine/docuisine-react).
 
