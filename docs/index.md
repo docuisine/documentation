@@ -1,11 +1,14 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
-# Documentation
+# Manage your recipes with ease
 
-Welcome to the Docuisine documentation website.
+Browse, create and share recipes.
+
+[Get started](/user-guide#quick-start){ .md-button .md-button--primary }
 
 ## Features
 
