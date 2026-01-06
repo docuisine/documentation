@@ -13,13 +13,11 @@ The frontend is written in JavaScript (TypeScript) using ReactJS. We use [shadcn
 The project is in this [repository](https://github.com/docuisine/docuisine-react).
 
 1. Clone that repo using your favorite terminal
-
 ```bash
 git clone https://github.com/docuisine/docuisine-react
 ```
 
 2. Enter the project directory and open it using your IDE or simply use a text editor.
-
 ```bash
 cd docuisine-react
 code .                  # Example: Using Visual Studio Code
@@ -31,7 +29,6 @@ npm i
 ```
 
 4. Setup environment variables
-
 ```bash
 VITE_BACKEND_URL=http://localhost:7000
 VITE_IMAGE_HOST=http://localhost:9000
