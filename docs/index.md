@@ -8,7 +8,13 @@ hide:
 
 Browse, create and share recipes.
 
-[Get started](/user-guide#quick-start){ .md-button .md-button--primary }
+<div style="display: flex; gap: 1em;">
+
+<a href="https://docuisine.iragca.dev/" target="_blank" rel="noopener noreferrer"
+ class="md-button md-button--primary">Demo </a>
+<a href="/user-guide#quick-start" class="md-button md-button--secondary">Get started </a>
+
+</div>
 
 ## Features
 
