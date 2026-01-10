@@ -16,7 +16,7 @@ You can use this docker compose with further configuration, but it is recommende
 # It defines services for the backend application and a PostgreSQL database
 services:
   backend:
-    image: iragca/docuisine:backend
+    image: docuisine/docuisine:backend
     container_name: docuisine_backend
     restart: always
     ports:
@@ -76,8 +76,8 @@ All required configuration files are downloaded directly from the repository.
 
 1. Create or choose a directory where Docuisine will live.
 2. Open a command-line interface and navigate to that directory (ex. `cd path/to/folder`).
-3. Download the [Docker Compose file](https://raw.githubusercontent.com/iragca/docuisine/refs/heads/master/docs/assets/user-guide/docker-compose.yml).
-4. Download the [example environment file](https://raw.githubusercontent.com/iragca/docuisine/refs/heads/master/docs/assets/user-guide/.env.example) and rename it to `.env`.
+3. Download the [Docker Compose file](https://raw.githubusercontent.com/docuisine/docuisine/refs/heads/master/docs/assets/user-guide/docker-compose.yml).
+4. Download the [example environment file](https://raw.githubusercontent.com/docuisine/docuisine/refs/heads/master/docs/assets/user-guide/.env.example) and rename it to `.env`.
 5. Start the application in detached mode `docker compose up -d`, or alternatively remove `-d` for debugging purposes.
 6. Once the containers are running, the application should be accessible on the configured port.
 
@@ -85,8 +85,8 @@ All required configuration files are downloaded directly from the repository.
 
     ```bash title="Terminal"
     cd path/to/folder
-    curl -f -O https://raw.githubusercontent.com/iragca/docuisine/refs/heads/master/docs/docs/assets/user-guide/docker-compose.yml
-    curl -f -o .env https://raw.githubusercontent.com/iragca/docuisine/refs/heads/master/docs/docs/assets/user-guide/.env.example
+    curl -f -O https://raw.githubusercontent.com/docuisine/docuisine/refs/heads/master/docs/docs/assets/user-guide/docker-compose.yml
+    curl -f -o .env https://raw.githubusercontent.com/docuisine/docuisine/refs/heads/master/docs/docs/assets/user-guide/.env.example
     docker compose up -d
     ```
 
@@ -114,7 +114,7 @@ POSTGRES_USER=user
 
 ## Source
 
-You can run Docuisine directly from the [GitHub repository](https://github.com/iragca/docuisine/).
+You can run Docuisine directly from the [GitHub repository](https://github.com/docuisine/docuisine/).
 
 Requirements:
 
@@ -126,7 +126,7 @@ Requirements:
 Firstly, clone the repo.
 
 ```bash title="CLI"
-git clone https://github.com/iragca/docuisine.git
+git clone https://github.com/docuisine/docuisine.git
 ```
 
 Then make a duplicate of `.env.example` and then rename it `.env`
