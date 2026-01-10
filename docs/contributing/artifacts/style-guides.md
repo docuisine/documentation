@@ -25,7 +25,7 @@ We follow and extend [this framework](https://github.com/wgtechlabs/clean-commit
 
     ```
     📦 new: user authentication system
-    🛠️ update(api): improve error handling  # with optional scope
+    🔧 update(api): improve error handling  # with optional scope
     🔒 security(auth): fix jwt token validation bypass
     🗑️ remove(deps): unused axios dependency
     ☕ chore(deps): bump react from 17.0.2 to 18.2.0
