@@ -9,13 +9,11 @@ This page discusses how to contribute documentation for Docuisine. We use [Zensi
 > If you don't have Python 3.13 on your machine, simply write `uv python install 3.13` on your favourite terminal.
 
 1. Install dependencies
-
 ```bash
 uv sync
 ```
 
 2. Start the local documentation server and start writing!
-
 ```bash
 make docs   # Runs the docs server at http://localhost:7000
 ```
