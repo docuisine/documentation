@@ -3,7 +3,7 @@
 ## Contributing Code
 
 Before committing or pushing changes, we aim to follow a set of standards to keep commits and changes easy to understand and meaningful.
-These standards are used to enhance communication between fellow contributors who write and read code for the project. Less chances of overthinking communication and a higher chance of shipping high quality contributions.
+These standards are used to enhance communication between fellow contributors who write and read code for the project. Fewer chances of overthinking communication and a higher chance of shipping high quality contributions.
 
 ### Commit Guidelines
 
