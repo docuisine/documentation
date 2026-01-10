@@ -4,11 +4,11 @@ Thank you for your interest in contributing to the Docuisine project! This page 
 
 Even if you cannot contribute code, you can still help Docuisine! The two main things you can help with are testing and creating issues. Contributing to code, documentation, and other non-code components are all outlined in the sections below.
 
-## Reporting Issues
+## Issues
 
 We use GitHub extensively to track open issues, new enhancements or features, and other aspects of development.
 
-Please see the [getting help page](../getting-help.md) for help with troubleshooting and finding bugs, and the [documentation on issues](./reporting-issues.md) for more information on how to submit good issues.
+Please see the [getting help page](../getting-help.md) for help with troubleshooting and finding bugs, and the [documentation on issues](./issues.md) for more information on how to submit good issues or solve them.
 
 ## Developing Code
 
