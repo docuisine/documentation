@@ -27,3 +27,15 @@ Documentation is incredibly helpful! All these docs are written using [Zensical]
 ## Testing
 
 Testing is the easiest way to contribute. Simply use Docuisine, and if you run into problems, [let us know](../getting-help.md). This is the most common way we uncover bugs, through a user doing something we hadn't thought about. If the issue does end up being related to the code, a [bug issue](./reporting-issues.md) can then be opened.
+
+## Repos
+
+This section enumerates the repositories of Docuisine and are related with all the previously sections. Should you wish to contribute specifically to their repos, make sure to read their relevent documentation with respect to their domain.
+
+| Repository                                                      | Description                                                 | Domain                              |
+| --------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------- |
+| [docuisine](https://github.com/docuisine/docuisine)             | The Python backend of Docuisine                             | [Code](./development/backend.md)    |
+| [docuisine-react](https://github.com/docuisine/docuisine-react) | The TypeScript/React backend of Docuisine                   | [Code](./development/frontend.md)   |
+| [documentation](https://github.com/docuisine/documentation)     | The docs (this website) for Docuisine written with Zensical | [Docs](writing-documentation.md)    |
+| [backlog](https://github.com/docuisine/backlog)                 | For reporting issues that are not repo specific             | [Non-code](issues.md)               |
+| [assets](https://github.com/docuisine/assets)                   | Image hosting and branding assets                           | [Non-code](./artifacts/branding.md) |
