@@ -49,5 +49,4 @@ cd projectname/
 ```bash
 git remote add upstream git@github.com:Docuisine/projectname.git
 ```
-
-4. Now you can start making changes to the code. See the relevant documentation to on how to run a development server on both [frontend](frontend.md) and [backend](./backend.md) projects.
+4. When contributing code, ensure that you have read the [guidelines](/documentation/contributing/artifacts/style-guides/#contributing-code) before making commits and changes to the code. See the relevant documentation on how to run a development server for both the [frontend](frontend.md) and [backend](./backend.md) projects.
