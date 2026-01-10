@@ -40,14 +40,14 @@ The first step is to set up a copy of the Git repository of the project you want
 1. On GitHub, "Fork" the Docuisine repository you wish to contribute to, to your own user account using the "Fork" button in the relevant repository.
 
 2. Clone your fork to your local machine and enter the directory:
-
 ```bash
 git clone git@github.com:yourusername/projectname.git
 cd projectname/
 ```
-3. Add the "upstream" remote, which allows you to pull down changes from the main project easily:
 
+3. Add the "upstream" remote, which allows you to pull down changes from the main project easily:
 ```bash
 git remote add upstream git@github.com:Docuisine/projectname.git
 ```
+
 4. Now you can start making changes to the code. See the relevant documentation to on how to run a development server on both [frontend](frontend.md) and [backend](./backend.md) projects.
