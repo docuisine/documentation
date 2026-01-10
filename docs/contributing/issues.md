@@ -30,6 +30,6 @@ If you ever need assistance for troubleshooting or opening an issue, please [con
 
 Backlog issues are issues that have already been report/written up and remain to be completed. Resolving these existing issues is one of the main ways of contributing to Docuisine.
 
-![Backlog Dashboard](https://raw.githubusercontent.com/docuisine/docuisine/refs/heads/master/docs/docs/assets/contributing/development/backlog-dashboard.png)
+![Backlog Dashboard](https://github.com/docuisine/documentation/blob/master/docs/assets/contributing/development/backlog-dashboard.png)
 
 To stay on top of existing issues, head over to the [backlog dashboard](https://github.com/orgs/docuisine/projects/1) to see issues that have been `Accepted` and are ready to be completed. These issues are concerned with both code and non-code issues so make sure to read the relevant documentation for [contributing code changes](/documentation/contributing/development/) and [writing documentation](/documentation/contributing/writing-documentation/).
