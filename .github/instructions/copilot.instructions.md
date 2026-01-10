@@ -20,7 +20,7 @@ Reference: https://github.com/wgtechlabs/clean-commit
 | Emoji | Type       | What it covers                                      |
 | :---: | ---------- | --------------------------------------------------- |
 |  📦   | `new`      | Adding new features, files, or capabilities         |
-|  🔧   | `update`   | Changing existing code, refactoring, improvements   |
+|  🔧   | `update`   | Changing existing code, bug fixes, refactoring, improvements   |
 |  🗑️   | `remove`   | Removing code, files, features, or dependencies     |
 |  🔒   | `security` | Security fixes, patches, vulnerability resolutions  |
 |  ⚙️   | `setup`    | Project configs, CI/CD, tooling, build systems      |
