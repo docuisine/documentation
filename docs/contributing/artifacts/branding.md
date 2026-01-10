@@ -1,6 +1,6 @@
 # Branding
 
-This page discusses Docuisine's brand and theme. Changes and suggestions are welcome regarding everything about branding and theming.
+This page discusses Docuisine's brand and theme. Changes and suggestions are welcome regarding everything about branding and theming. Should you wish to suggest branding changes, please write it [here](https://github.com/docuisine/assets/issues/new).
 
 ## Theme
 

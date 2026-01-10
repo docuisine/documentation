@@ -50,7 +50,7 @@ nav = [
     ] },
     { "Contributing" = [
         "contributing/index.md",
-        { "Reporting Issues" = "contributing/reporting-issues.md" },
+        { "Issues" = "contributing/issues.md" },
         { "Writing Documentation" = "contributing/writing-documentation.md" },
         { "Development" = [
             "contributing/development/index.md",
