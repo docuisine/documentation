@@ -26,13 +26,13 @@ uv sync
 
 4. Start the local documentation server and start writing!
 ```bash
-uv run zensical serve
+make docs   # Runs the docs server at http://localhost:7000
 ```
 
 !!! tip Options
 
-    Optionally, add the argument `-a` to specify an address and port for the server to run on.
-    Example: `uv run zensical serve -a 0.0.0.0:7000`, this runs on `http://localhost:7000` or `http://0.0.0.0:7000`.
+    Optionally, run the actual command `uv run zensical serve` and add the argument `-a` to specify an address and port for the server to run on.
+    Example: `uv run zensical serve -a 0.0.0.0:7000`, this runs on `http://localhost:7000` or `http://0.0.0.0:7000`
 
 ## Formatting
 
