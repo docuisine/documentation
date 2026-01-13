@@ -15,19 +15,45 @@ You can use this docker compose with further configuration, but it is recommende
 # This docker-compose file is a production-ready setup for the Docuisine backend service
 # It defines services for the backend application and a PostgreSQL database
 services:
-  backend:
-    image: docuisine/docuisine:backend
-    container_name: docuisine_backend
+  frontend:
+    image: iragca/docuisine:frontend
+    container_name: docuisine-frontend
     restart: always
     ports:
-      - "${DOCUISINE_BACKEND_PORT:-7000}:8000"
+      - "${DOCUISINE_FRONTEND_PORT:-3000}:3000"
+    environment:
+      BACKEND_URL: http://backend:7000
+      IMAGE_HOST: http://s3:9000/docuisine-images
+      APP_VERSION: prod
+    depends_on:
+      backend:
+        condition: service_healthy
+      s3:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/index.html > /dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+  backend:
+    image: iragca/docuisine:backend
+    container_name: docuisine-backend
+    restart: always
+    ports:
+      - "${DOCUISINE_BACKEND_PORT:-7000}:7000"
+    env_file:
+      - .env
     environment:
       DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-user}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-docuisine}
+      S3_ENDPOINT_URL: http://s3:9000
     depends_on:
       db:
         condition: service_healthy
+      s3:
+        condition: service_healthy
     healthcheck:
-      test: ["CMD-SHELL", "curl -sf http://localhost:8000/health || exit 1"]
+      test: ["CMD-SHELL", "python3 health_check.py || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -35,10 +61,12 @@ services:
   db:
     hostname: ${POSTGRES_HOST:-localhost}
     image: postgres:18.1
-    container_name: docuisine_postgres
+    container_name: docuisine-db
     restart: always
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
+    env_file:
+      - .env
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-user}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
@@ -63,9 +91,29 @@ services:
       timeout: 3s
       retries: 5
       start_period: 30s
+  s3:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1
+    container_name: docuisine-s3
+    ports:
+      - "${S3_PORT:-9000}:9000" # S3 API
+      - "${S3_CONSOLE_PORT:-9001}:9001" # Web Console
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY:-s3user}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_KEY:-s3password}
+    volumes:
+      - docuisine_minio_data:/data
+    command: server /data --console-address ":9001"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
 volumes:
   docuisine_db_data:
+  docuisine_minio_data:
 ```
 
 ### Example Usage
@@ -97,19 +145,29 @@ All required configuration files are downloaded directly from the repository.
 These environment variables are recommended to be customized as you see fit.
 
 ```bash title=".env"
-DOCUISINE_BACKEND_PORT=7000
+## It is recommended to change the default values host machine compatibility purposes.
+DOCUISINE_FRONTEND_PORT=3000 # This is where you can access the web client
+
+## It is recommended to change the default values for security purposes.
 POSTGRES_PASSWORD=password
 POSTGRES_USER=user
+S3_ACCESS_KEY=minioadmin
+S3_SECRET_KEY=minioadmin
 ```
 
 ??? info
 
     These variables can be left as is, but you can change them if you know what you are doing.
     ``` bash title=".env"
+    DOCUISINE_BACKEND_PORT=7000
     MODE=production
+
     POSTGRES_DB=docuisine
     POSTGRES_PORT=5432
     POSTGRES_HOST=localhost
+
+    S3_BUCKET_NAME=docuisine-images
+    S3_PORT=9000
     ```
 
 ## Source
