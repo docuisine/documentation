@@ -7,7 +7,7 @@ These standards are used to enhance communication between fellow contributors wh
 
 ### Commit Guidelines
 
-We follow and extend [this framework](https://github.com/wgtechlabs/clean-commit), we recommend to at least take a glance or skim through the [specification](https://github.com/wgtechlabs/clean-commit/blob/main/SPECIFICATION.md). Basically, we make commits in this format: `{emoji} {type}{(scope)<optional>}: {description}`.
+We follow and extend [this framework](https://github.com/wgtechlabs/clean-commit), we recommend to at least take a glance or skim through the [specification](https://github.com/wgtechlabs/clean-commit/blob/main/SPECIFICATION.md). Basically, we make commits in this format: `{emoji} {type} {(scope)<optional>}: {description}`.
 
 | Emoji | Type       | What it covers                                               |
 | :---: | ---------- | ------------------------------------------------------------ |
@@ -25,10 +25,10 @@ We follow and extend [this framework](https://github.com/wgtechlabs/clean-commit
 
     ```
     📦 new: user authentication system
-    🔧 update(api): improve error handling  # with optional scope
-    🔒 security(auth): fix jwt token validation bypass
-    🗑️ remove(deps): unused axios dependency
-    ☕ chore(deps): bump react from 17.0.2 to 18.2.0
+    🔧 update (api): improve error handling  # with optional scope
+    🔒 security (auth): fix jwt token validation bypass
+    🗑️ remove (deps): unused axios dependency
+    ☕ chore (deps): bump react from 17.0.2 to 18.2.0
     📖 docs: fix typos in contributing guide
     ```
 
