@@ -59,7 +59,7 @@ services:
       retries: 5
       start_period: 10s
   db:
-    hostname: ${POSTGRES_HOST:-localhost}
+    hostname: localhost
     image: postgres:18.1
     container_name: docuisine-db
     restart: always
@@ -77,15 +77,7 @@ services:
       test:
         [
           "CMD-SHELL",
-          "pg_isready",
-          "-U",
-          "${POSTGRES_USER:-user}",
-          "-d",
-          "${POSTGRES_DB:-docuisine}",
-          "-h",
-          "${POSTGRES_HOST:-localhost}",
-          "-p",
-          "5432",
+          "pg_isready -U ${POSTGRES_USER:-user} -d ${POSTGRES_DB:-docuisine} -h localhost -p 5432",
         ]
       interval: 5s
       timeout: 3s
