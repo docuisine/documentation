@@ -81,6 +81,12 @@ These icons are flat versions of the colored logos, often used in a minimalist d
         </div>
     </div>
 
+=== "Favicon (SVG)"
+
+    <div class="container">
+        <img src="https://github.com/docuisine/assets/blob/master/branding/favicon/favicon-flat.svg?raw=true" width="200">
+    </div>
+
 === "Typography"
 
     The typography logo uses the 'Enigma' font of regular variant.
